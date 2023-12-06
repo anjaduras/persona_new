@@ -1,63 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Anna Duras</title>
-        <link rel="stylesheet" href="./css/styles.css">
-    </head>
-    <body>
-        <script src="script.js"></script>
-        <header class="container">
-            <nav>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </nav>
-        </header>
-        <main class="container">
-            <article>
-                <h1>Hi! My name is Anna</h1>
-                <img src="./images/profile.png" alt="profile_image"  width="128" height="128" class="profile">
-                <p class="intro">I'm a 18-year-old programmer from Ukraine, now based in Munich, Germany.</p>
-            </article>
-            <!-- Tab links -->
-            <div class="tab">
-                <button class="tablinks" onclick="openSection(event, 'about')">About</button>
-                <button class="tablinks" onclick="openSection(event, 'njura')">Njura</button>
-                <button class="tablinks" onclick="openSection(event, 'portfolio')">Portfolio</button>
-            </div>
-            <!-- Tab content -->
-            <div id="about" class="tabcontent">
-                <h2>About</h2>
-                <p>More about me</p>
-            </div>
-            <div id="njura" class="tabcontent">
-                <h2>Njura</h2>
-                <p>"Njura pokazhe" is a project that I've started two and a half years ago to populate Ukrainian Sign Language. WIthin it's framework, I run a YouTube channel and also work on the development of corresponding website.
-                </p>
-            </div>
-            <div id="portfolio" class="tabcontent">
-                <h2>Portfolio</h2>
-                <p>I constantly update my programming knowledge and apply it in work. Thanks to university courses and personal interests, I got to know HTML, CSS, JavaScript and C++.</p>
-            </div>
-            <div>
-                <p>MY MOOD BOARD:</p>
-            </div>
-        </main>
-        
-        <footer class="container">
-            <p>You can find me here:</p>
-            <svg class="icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="35" height="35">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Duras</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"> -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <nav>
+            <ol>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <p>Hi! My name is</p>
+            <h1>Anna-</h1>
+            <p>I'm a 18-year-old programmer from Ukraine, now based in Munich, Germany. </p>
+            <img src="./images/yellow.png" alt="">
+        </div>
+        <br>
+
+        <div class="tab">
+            <button class="tablinks" onclick="clickHandle(event, 'About')">ABOUT</button>
+            <button class="tablinks" onclick="clickHandle(event, 'Njura')">NJURA</button>
+            <button class="tablinks" onclick="clickHandle(event, 'Portfolio')">PORTFOLIO</button>
+        </div>
+
+        <div id="About" class="tabcontent">
+            <p>ABOUT ME</p>
+            <p>lorem ipsum</p>
+            <p>More about me <span style="color: rgb(255, 191, 0);">HERE.</span></p>
+        </div>
+        <div id="Njura" class="tabcontent">
+            <p>NJURA</p>
+            <p>"Njura pokazhe" is a project that I've started two and a half years ago to populate Ukrainian Sign
+                Language. WIthin it's framework, I run a YouTube channel and also work on the development of
+                corresponding website.
+            </p>
+            <p>More about my project <span style="color: rgb(255, 191, 0);">HERE.</span></p>
+        </div>
+        <div id="Portfolio" class="tabcontent">
+            <p>PORTFOLIO</p>
+            <p>I constantly update my programming knowledge and apply it in work. Thanks to university courses and
+                personal interests, I got to know HTML, CSS, JavaScript and C++.</p>
+            <p>You can see my projects <span style="color: rgb(255, 191, 0);">HERE.</span></p>
+            <p>I'm also active on <span style="color: rgb(255, 191, 0);">GitHub.</span> </p>
+        </div>
+        <br><br><br>
+        <div>
+            <p>MY MOOD BOARD:</p>
+        </div>
+    </main>
+    <footer>
+        <p>You can find me here:</p>
+        <svg class="icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="35" height="35">
             <path d="M7.5 5a2.5 2.5 0 100 5 2.5 2.5 0 000-5z" fill="currentColor"></path>
             <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M4.5 0A4.5 4.5 0 000 4.5v6A4.5 4.5 0 004.5 15h6a4.5 4.5 0 004.5-4.5v-6A4.5 4.5 0 0010.5 0h-6zM4 7.5a3.5 3.5 0 117 0 3.5 3.5 0 01-7 0zM11 4h1V3h-1v1z"
-            fill="currentColor"></path>
+                fill="currentColor"></path>
         </svg>
         <svg class="icon" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="35" height="35">
             <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M0 1.5A1.5 1.5 0 011.5 0h12A1.5 1.5 0 0115 1.5v12a1.5 1.5 0 01-1.5 1.5h-12A1.5 1.5 0 010 13.5v-12zM5 5H4V4h1v1zm-1 6V6h1v5H4zm4.5-4A1.5 1.5 0 007 8.5V11H6V6h1v.5a2.5 2.5 0 014 2V11h-1V8.5A1.5 1.5 0 008.5 7z"
-            fill="currentColor"></path>
+                fill="currentColor"></path>
         </svg>
         <svg class="icon" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg" width="35" height="35">
             <path d="M.5 2.5A1.5 1.5 0 012 1h12a1.5 1.5 0 011.5 1.5v1.208L8 7.926.5 3.708V2.5z" fill="currentColor">
@@ -66,27 +78,5 @@
             </path>
         </svg>
     </footer>
-
-
-<!-- tabs script -->
-<script>
-function openSection(evt, sectionName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(sectionName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
-<!-- / of tabs script -->
-
-
 </body>
-
 </html>
