@@ -32,3 +32,29 @@ img {
 .icon {
     color: rgb(255, 191, 0);
 }
+
+.tab {
+    overflow: hidden;
+    background-color: rgb(255, 191, 0);
+    border-radius: 10%;
+    padding: 1%;
+    width: min-content;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+}
