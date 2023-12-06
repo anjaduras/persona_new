@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* all text */
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+/* only headers */
+* {
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(22, 22, 61);
+}
+
+main,
+footer {
+    padding: 10%;
+}
+
+p {
+    color: rgb(255, 252, 248);
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: rgb(255, 191, 0);
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 70px;
+}
+
+img {
+    border-radius: 70%;
+}
+
+.icon {
+    color: rgb(255, 191, 0);
+}
