@@ -25,36 +25,121 @@ h1 {
     font-size: 70px;
 }
 
-img {
-    border-radius: 70%;
-}
+
 
 .icon {
     color: rgb(255, 191, 0);
 }
-
-.tab {
-    overflow: hidden;
-    background-color: rgb(255, 191, 0);
-    border-radius: 10%;
-    padding: 1%;
-    width: min-content;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
 
 /* Style the tab content */
 .tabcontent {
     display: none;
     padding: 6px 12px;
 }
+
+/* container */
+ * Container and responsive spacings for header, main, footer
+ */
+main {
+  display: block;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+body > header,
+body > main,
+body > footer {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/**
+* Container
+*/
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--spacing);
+  padding-left: var(--spacing);
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 510px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 920px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1130px;
+  }
+}
+
+/* temp (tabs) */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 1rem .5rem;
+  height: 100%;
+}
+
+header {margin-top: .5rem;
+margin-bottom: .5rem;}
+
+h1 {text-align: center; margin-bottom: .5rem;}
+h2 {margin-bottom: .5rem;}
+
+article {margin-top: .5rem; margin-bottom: .5rem}
+
+footer {text-align: center;}
+
+.intro {text-align: center; padding: 1.5rem, margin-top:2rem;}
+
+.profile {border-radius: 70%; float: right; }
+
+
+</style>
