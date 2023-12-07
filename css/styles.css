@@ -3,106 +3,49 @@
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
 /* end of custom fonts */
 
-
-.container {padding-left: 2rem; padding-right: 2rem;}
-header {margin-top: 2em;}
-a, a:hover {
-	text-decoration: none;
-}
-
+/* misc */
+.container { padding-left: 2rem; padding-right: 2rem; }
+header { margin-top: 2em; }
+a, a:hover { text-decoration: none; }
+/* end of misc */
 
 /* dark mode colors */
-body.dark {
-    --bg-color: #000;
-    --bg-secondary-color: #131316;
-    --font-color: #f5f5f5;
-    --color-grey: #ccc;
-    --color-darkGrey: #777;
-  }
-body.dark svg {fill:white;}
+body.dark { --bg-color: #000; --bg-secondary-color: #131316; --font-color: #f5f5f5; --color-grey: #ccc; --color-darkGrey: #777; }
 /* end of dark mode colors */
 
 /* dark theme switch */
-#swith {font-size: 150%;}
+#swith { font-size: 150%; }
 /* end of dark theme switch */
 
 /* thin text in H1 */
-.thin {font-size: 62.5%; font-family: -apple-system, "BlinkMacSystemFont", "Avenir",
-    "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;; font-weight: normal;}
- /* end of thin text in H1 */
+.thin { font-size: 62.5%; font-family: -apple-system, "BlinkMacSystemFont", "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif; font-weight: normal; }
+/* end of thin text in H1 */
 
- /* name in H1 */   
-.name {font-family: 'La Belle Aurore', cursive; font-size: 150%; color: #3B5998;}
+/* name in H1 */   
+.name { font-family: 'La Belle Aurore', cursive; font-size: 150%; color: #3B5998; }
 /* end of name in H1 */
 
 /* social icons */
-aside {padding: auto;}
-.socialbtns,
-.socialbtns ul,
-.socialbtns li {
-  margin: 0;
-  margin-top: .5rem;
-  padding: 5px;
-}
-
-.socialbtns li {
-  list-style: none outside none;
-  display: inline-block;
-}
+aside { padding: auto; }
+.socialbtns, .socialbtns ul, .socialbtns li { margin: 0; margin-top: .5rem; padding: 5px; }
+.socialbtns li { list-style: none outside none; display: inline-block; }
 /* end of social icons */
 
 /* copyright */
-.copyright {font-size: small;}
+.copyright { font-size: small; }
 /* end of copyright */
 
-/* email protection */
-      code {
-        background-color: transparent;
-        color: #3B5998;
-      }
-      code::after {
-        content: attr(data-domain);
-      }
-      code::before {
-        content: attr(data-user) "@";
-      }
-/* end of email protection */
+/* email address protection */
+code { background-color: transparent; color: #3B5998; }
+code::after { content: attr(data-domain); }
+code::before { content: attr(data-user) "@"; }
+/* end of email address protection */
 
 /* portfolio */
-img {
-  max-width: 100%;
-  display: block;
-}
-
-figure {
-  margin: 0;
-  display: grid;
-  grid-template-rows: 1fr auto;
-  margin-bottom: 10px;
-  break-inside: avoid;
-}
-
-figure > img {
-  grid-row: 1 / -1;
-  grid-column: 1;
-}
-
-figure a {
-  color: black;
-  text-decoration: none;
-}
-
-figcaption {
-  grid-row: 2;
-  grid-column: 1;
-  background-color: rgba(255,255,255,.5);
-  padding: .2em .5em;
-  justify-self: center;
-}
-
-.port_container {
-  column-count: 4;
-  column-gap: 10px;
-}
-/*  */
+img { max-width: 100%; display: block; }
+figure { margin: 0; display: grid; grid-template-rows: 1fr auto; margin-bottom: 10px; break-inside: avoid; }
+figure > img { grid-row: 1 / -1; grid-column: 1; }
+figure a { color: black; text-decoration: none; }
+figcaption { grid-row: 2; grid-column: 1; background-color: rgba(255, 255, 255, .5); padding: .2em .5em; justify-self: center; }
+.port_container { column-count: 4; column-gap: 10px; }
+/* end of portfolio */
