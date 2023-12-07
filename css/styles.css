@@ -33,7 +33,7 @@ body.dark svg {fill:white;}
  /* end of thin text in H1 */
 
  /* name in H1 */   
-.name {font-family: 'La Belle Aurore', cursive; font-size: 120%; color: #3B5998;}
+.name {font-family: 'La Belle Aurore', cursive; font-size: 150%; color: #3B5998;}
 /* end of name in H1 */
 
 /* social icons */
@@ -42,7 +42,7 @@ aside {padding: auto;}
 .socialbtns ul,
 .socialbtns li {
   margin: 0;
-  margin-top: 1.5rem;
+  margin-top: .5rem;
   padding: 5px;
 }
 
@@ -55,3 +55,16 @@ aside {padding: auto;}
 /* copyright */
 .copyright {font-size: small;}
 /* end of copyright */
+
+/* email protection */
+      code {
+        background-color: transparent;
+        color: #3B5998;
+      }
+      code::after {
+        content: attr(data-domain);
+      }
+      code::before {
+        content: attr(data-user) "@";
+      }
+/* end of email protection */
