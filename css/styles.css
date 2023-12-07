@@ -1,2 +1,47 @@
+/* custom fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+/* end of custom fonts */
+
+.container {padding-left: 2rem; padding-right: 2rem;}
+header {margin-top: 2em;}
+a, a:hover {
+	text-decoration: none;
+}
+
+/* dark mode colors */
+body.dark {
+    --bg-color: #000;
+    --bg-secondary-color: #131316;
+    --font-color: #f5f5f5;
+    --color-grey: #ccc;
+    --color-darkGrey: #777;
+  }
+body.dark svg {fill:white;}
+/* end of dark mode colors */
+
+/* thin text in H1 */
+.thin {font-size: 62.5%; font-family: -apple-system, "BlinkMacSystemFont", "Avenir",
+    "Avenir Next", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;; font-weight: normal;}
+ /* end of thin text in H1 */
+
+ /* name in H1 */   
+.name {font-family: 'La Belle Aurore', cursive; font-size: 120%; color: #3B5998;}
+/* end of name in H1 */
+
+/* social icons */
+aside {padding: auto;}
+.socialbtns,
+.socialbtns ul,
+.socialbtns li {
+  margin: 0;
+  margin-top: 1.5rem;
+  padding: 5px;
+}
+
+.socialbtns li {
+  list-style: none outside none;
+  display: inline-block;
+}
+/* end of social icons */
