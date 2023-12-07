@@ -1,1 +1,143 @@
-projects
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <meta name="description" content="." />
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  </head>
+
+  <body class="container" role="document">
+    <header>
+      <div class="row">
+        <div class="col is-right">
+          <a
+            href="javascript:void(0)"
+            id="theme-switch"
+            onclick="switchMode(this)"
+            ><span id="swith">☀️</span></a
+          >
+        </div>
+      </div>
+    </header>
+    <main>
+
+      <div class="row">
+        <div class="col">
+          <nav class="tabs is-center">
+            <a href="./index.html">About</a>
+            <a href="./projects.html" class="active">Projects</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <a href="./blog.html">Blog</a>
+          </nav>
+        </div>
+      </div>
+
+<div class="row">
+	<div class="col-12"><h1 class="is-center">My Projects</h1></div>
+</div>
+<div class="row">
+	<div class="col">
+		<div class="card">
+			<header>
+			<h2>🙈 Project 1</h2>
+			</header>
+			<p>Lorem ipsum ... nostrud exercit.</p>
+		</div>
+	</div>
+	<div class="col"><div class="card">
+		<header>
+			<h2>🙈 Project 2</h2>
+		</header>
+		<p>Lorem ipsum ... nostrud exercit.</p>
+	</div>
+</div></div>
+</div>
+
+
+    </main>
+
+    <aside>
+      <div class="row">
+        <div class="col is-center">
+          <ul class="socialbtns">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/annaduras/"
+                target="_blank"
+                rel="nofollow noopener"
+                ><img
+                  src="./images/linkedin.svg"
+                  alt="LinkedIn"
+                  width="32"
+                  height="32"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/anjaduras"
+                target="_blank"
+                rel="nofollow noopener"
+                ><img
+                  src="./images/github.svg"
+                  alt="GitHub"
+                  width="32"
+                  height="32"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/tashoklasna/"
+                target="_blank"
+                rel="nofollow noopener"
+                ><img
+                  src="./images/instagram.svg"
+                  alt="LinkedIn"
+                  width="32"
+                  height="32"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <footer>
+      <div class="row">
+        <div class="col is-center">
+          <div class="copyright">© 2023 Anja</div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.body.classList.add("dark");
+      }
+    </script>
+    <script>
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        document.body.classList.add("dark");
+        document.querySelector("#theme-switch").innerHTML = "🌙";
+      }
+
+      function switchMode(el) {
+        const bodyClass = document.body.classList;
+        bodyClass.contains("dark")
+          ? ((el.innerHTML = "☀️"), bodyClass.remove("dark"))
+          : ((el.innerHTML = "🌙"), bodyClass.add("dark"));
+      }
+    </script>
+  </body>
+</html>
+
