@@ -23,7 +23,7 @@ a:hover {
 
 /* dark mode colors */
 body.dark {
-    --bg-color: #000;
+    --bg-color: #121212;
     --bg-secondary-color: #131316;
     --font-color: #f5f5f5;
     --color-grey: #ccc;
