@@ -52,7 +52,7 @@ body.dark {
 .name {
     font-family: 'La Belle Aurore', cursive;
     font-size: 150%;
-    color: #3B5998;
+    color: #14854F;
 }
 
 /* end of name in H1 */
@@ -87,7 +87,7 @@ aside {
 /* email address protection */
 code {
     background-color: transparent;
-    color: #3B5998;
+    color: #14854F;
 }
 
 code::after {
