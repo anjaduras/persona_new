@@ -25,120 +25,123 @@
             id="theme-switch"
             onclick="switchMode(this)"
             ><span id="swith">☀️</span></a
-            >
-          </div>
+          >
         </div>
-      </header>
-      <main>
-        <div class="row is-vertical-align">
-          <div class="col-6 is-center">
-            <article>
-              <header>
-                <h1>
+      </div>
+    </header>
+    <main>
+      <div class="row is-vertical-align">
+        <div class="col-6 is-center">
+          <article>
+            <header>
+              <h1>
                 <span class="thin">My name is</span>
                 <span class="name">Anja</span>
-                </h1>
-              </header>
-              <p>
-                I'm a 18-year-old programmer from 🇺🇦 Lviv, Ukraine, now based in 🇩🇪 Munich,
-                Germany. Drop me a line at <code data-domain="duras.org" data-user="anna"></code>, or find me in social networks! I'm open for a collaboration! You can find out more about me using a links below:
-              </p>
-            </article>
-          </div>
-          <div class="col-6 is-center">
-            <img
+              </h1>
+            </header>
+            <p>
+              I'm a 18-year-old programmer from 🇺🇦 Lviv, now based in 🇩🇪 Munich.
+              Drop me a line at
+              <code data-domain="duras.org" data-user="anna"></code>, or find me
+              in social networks! I'm open for a collaboration! You can find out
+              more about me using a links below:
+            </p>
+          </article>
+        </div>
+        <div class="col-6 is-center">
+          <img
             src="./images/anja.svg"
             alt=""
             height="96"
             width="96"
             class="is-rounded"
-            />
-          </div>
+          />
         </div>
-        <div class="row">
-          <div class="col">
-            <nav class="tabs is-center">
-              <a class="active">About</a>
-              <a href="./projects.html">Projects</a>
-              <a href="./portfolio.html">Portfolio</a>
-              <!-- <a href="./blog.html">Blog</a> -->
-            </nav>
-          </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <nav class="tabs is-center">
+            <a class="active">About</a>
+            <a href="./projects.html">Projects</a>
+            <a href="./portfolio.html">Portfolio</a>
+            <!-- <a href="./blog.html">Blog</a> -->
+          </nav>
         </div>
-      </main>
-      <aside>
-        <div class="row">
-          <div class="col is-center">
-            <ul class="socialbtns">
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/annaduras/"
-                  target="_blank"
-                  rel="nofollow noopener"
-                  ><img
+      </div>
+    </main>
+    <aside>
+      <div class="row">
+        <div class="col is-center">
+          <ul class="socialbtns">
+            <li>
+              <a
+                href="https://www.linkedin.com/in/annaduras/"
+                target="_blank"
+                rel="nofollow noopener"
+                ><img
                   src="./images/linkedin.svg"
                   alt="LinkedIn"
                   width="32"
                   height="32"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/anjaduras"
-                  target="_blank"
-                  rel="nofollow noopener"
-                  ><img
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/anjaduras"
+                target="_blank"
+                rel="nofollow noopener"
+                ><img
                   src="./images/github.svg"
                   alt="GitHub"
                   width="32"
                   height="32"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/tashoklasna/"
-                  target="_blank"
-                  rel="nofollow noopener"
-                  ><img
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/tashoklasna/"
+                target="_blank"
+                rel="nofollow noopener"
+                ><img
                   src="./images/instagram.svg"
                   alt="LinkedIn"
                   width="32"
                   height="32"
-                /></a>
-              </li>
-            </ul>
-          </div>
+              /></a>
+            </li>
+          </ul>
         </div>
-      </aside>
-      <footer>
-        <div class="row">
-          <div class="col is-center">
-            <div class="copyright">© 2023 Anja</div>
-          </div>
+      </div>
+    </aside>
+    <footer>
+      <div class="row">
+        <div class="col is-center">
+          <div class="copyright">© 2023 Anja</div>
         </div>
-      </footer>
-      <script>
+      </div>
+    </footer>
+    <script>
       if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
       ) {
-      document.body.classList.add("dark");
+        document.body.classList.add("dark");
       }
-      </script>
-      <script>
+    </script>
+    <script>
       if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
       ) {
-      document.body.classList.add("dark");
-      document.querySelector("#theme-switch").innerHTML = "🌙";
+        document.body.classList.add("dark");
+        document.querySelector("#theme-switch").innerHTML = "🌙";
       }
       function switchMode(el) {
-      const bodyClass = document.body.classList;
-      bodyClass.contains("dark")
-      ? ((el.innerHTML = "☀️"), bodyClass.remove("dark"))
-      : ((el.innerHTML = "🌙"), bodyClass.add("dark"));
+        const bodyClass = document.body.classList;
+        bodyClass.contains("dark")
+          ? ((el.innerHTML = "☀️"), bodyClass.remove("dark"))
+          : ((el.innerHTML = "🌙"), bodyClass.add("dark"));
       }
-      </script>
-    </body>
-  </html>
+    </script>
+  </body>
+</html>
