@@ -86,8 +86,8 @@ aside {
 
 /* email address protection */
 code {
-    background-color: transparent;
     color: #14854F;
+    padding: .1em .1em;
 }
 
 code::after {
