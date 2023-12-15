@@ -11,7 +11,7 @@ a, a:hover { text-decoration: none;
 /* end of misc */
 
 /* dark mode */
-body.dark { --bg-color: #121212; --bg-secondary-color: #131316; --font-color: #f5f5f5; --color-grey: #ccc; --color-darkGrey: #777; }
+body.dark { --bg-color: #282828; --bg-secondary-color: #131316; --font-color: #f5f5f5; --color-grey: #ccc; --color-darkGrey: #777; }
 /* end of dark mode */
 
 /* dark theme switch */
@@ -38,7 +38,7 @@ aside { padding: auto; }
 /* end of copyright */
 
 /* email address protection */
-code { color: #14854F; padding: .1em .1em; }
+code { color: #14854F; padding: .1em .1em; background-color: transparent;}
 code::after { content: attr(data-domain); }
 code::before { content: attr(data-user) "@"; }
 /* end of email address protection */
